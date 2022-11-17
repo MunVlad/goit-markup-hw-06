@@ -457,6 +457,26 @@
               </li>
             </ul>
           </div>
+          <form class="footer-form">
+            <div class="footer-field">
+              <label class="footer-label" for="mail"
+                >Підпишіться на розсилку</label
+              >
+              <input
+                type="email"
+                class="footer-input"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+            </div>
+            <button type="submit" class="footer-button">
+              Підписатися
+              <svg class="footer-telegram" width="24" height="24">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </footer>
     </main>
@@ -467,6 +487,21 @@
             <use href="./images/icons.svg#cross"></use>
           </svg>
         </div>
+        <form name="request" class="modal-form">
+          <h2>Залиште свої данні, ми вам передзвонимо</h2>
+          <label for="modal-name" class="modal-label">Ім'я</label>
+          <input type="text" class="modal-input" name="name" id="modal-name">
+          <label for="modal-tel" class="modal-label">Телефон</label>
+          <input type="text" class="modal-input" name="tel" id="modal-tel">
+          <label for="modal-mail" class="modal-label">Пошта</label>
+          <input type="text" class="modal-input" name="mail" id="modal-mail">
+          <label for="modal-area" class="modal-label">Коментар</label>
+          <textarea class="modal-textarea" name="modal-text" id="modal-area" placeholder="Введіть текст"></textarea>
+          <label class="modal-check"><input type="checkbox" class="modal-checkbox" name="agree" value="agree">Погоджуюсь з розсилкою та приймаю <a href="#" class="modal-link">Умови договору</a></label>
+          
+          <button type="submit" class="modal-button">Відправити</button>
+          
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
